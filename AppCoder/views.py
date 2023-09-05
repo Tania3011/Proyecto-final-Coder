@@ -17,8 +17,7 @@ def inicio_view(request):
 
 def cursos_view(request):
     if request.method == "GET":
-        print("+" * 90) #  Imprimimos esto para ver por consola
-        print("+" * 90) #  Imprimimos esto para ver por consola
+        
         return render(
             request,
             "AppCoder/curso_formulario_avanzado.html",

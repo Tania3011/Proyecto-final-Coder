@@ -9,15 +9,30 @@
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Formulario</title>
+     
  </head>
 
- <body style="background-color: palevioletred;">
+ <!--<body style="background-color: rgb(112, 121, 216);">
      <form action="/AppCoder/cursos/" method="POST">
          {% csrf_token %}
          {{ form.as_p }}
          <input type="submit" value="Crear">
      </form>
- </body>
+ </body>!-->
+
+ <body>
+ <div style="font-family: Arial, sans-serif; padding: 20px; background-color: #9fd7f8; max-width: 600px; margin: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+    <h4 style="color: #4a90e2; border-bottom: 2px solid #4a90e2; padding-bottom: 10px;">Agregar Curso</h4>
+    <div style="margin-top: 20px; background-color: white; padding: 20px; border-radius: 5px;">
+        <form action="/AppCoder/cursos/" method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="Guardar" style="background-color: #4a90e2; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
+        </form>
+    </div>
+    
+</div>
+</body>
 
  </html>
 {% endblock%}
